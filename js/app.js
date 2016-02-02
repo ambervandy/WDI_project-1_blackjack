@@ -430,7 +430,7 @@ $betButton.click(function() {
 		setTimeout(function () { $dFace1.text($dface).css({"color": "black", "opacity": "1"}) }, 1600);
 		
 		// set mid-screen text
-		$("#direction").text("BLACKJACK! YOU WIN THE HAND!").css("opacity", "1");
+		$("#direction").text("BLACKJACK!").css("opacity", "1");
 
 		// run playerWins function
 		playerWins();
@@ -577,6 +577,7 @@ $standButton.click(function() { //<---------------------------------- ME STAND B
 	$dCard1.css({"background-image": "none", "background-color": "white"});
 	// add the card text to the dealer card
 	$dFace1.css("opacity", "1");
+	$("#dImg1").css("z-index", "10")
 
 
 
@@ -1257,7 +1258,7 @@ var playerWins = function() {
 	// set variables for both classes "faces" and "cardImg" to set them to opaque
 	$(".faces").css({"color": "black", "opacity": "1"});
 	$(".cardImg").css("opacity", "1");
-	$("#dImg1").css("z-index", "10")
+	$("#dImg1").css("z-index", "10");
 
 	// pizza bank and bet to reset!
 	// reset bet img to opacity 1
@@ -1283,7 +1284,10 @@ var busted = function() {
 
 	$("#direction").text("DEALER BUSTED!");
 
-	setTimeout(function () { playerWins() }, 800);
+	// setTimeout(function () { playerWins() }, 1600);
+
+	playerWins();
+
 }
 
 
@@ -1299,7 +1303,10 @@ var pBusted = function() {
 
 	$("#direction").text("YOU BUSTED!");
 
-	setTimeout(function () { dealerWins() }, 800);
+	// setTimeout(function () { }, 1600);
+ 	// tried a setTimeout and that didn't work well.
+ 	dealerWins()
+
 
 }
 
