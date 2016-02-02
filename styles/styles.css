@@ -1,0 +1,690 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url("../images/background.jpg");
+	font-size: 20px;
+	font-family: Impact, Impact5, Charcoal6, sans-serif;
+	color: black;
+	/*text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;*/
+}
+
+#wrapper {
+	height: 100%;
+}
+
+h1 {
+	color: white;
+	padding-top: 1em;
+	text-align: center;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#container-top {
+	width: 100%;
+	padding-left: 20%;
+	padding-top: 3em;
+	height: 6em;
+}
+
+#bankSpan, #betSpan {
+	float: left;
+}
+
+#bankSpan {
+	width: 100%;
+}
+
+#bet1 {
+	opacity: 0;
+	margin-left: 2%;
+	padding-bottom: 4%;
+}
+
+#container-bottom {
+	width: 100%;
+	bottom: 0;
+	height: 10em;
+    padding-left: 20%;
+}
+
+#betBox {
+	background-color: white;
+	width: 80%;
+	border: black solid 2px;
+	border-radius: 5%;
+	box-shadow: 3px 2px 2px black;
+	padding: 0.25em;
+}
+
+#bankBox {
+	margin-top: 1em;
+	background-color: white;
+	width: 80%;
+	height: 6em;
+	padding-bottom: 2em;
+	border: black solid 2px;
+	border-radius: 5%;
+	box-shadow: 3px 2px 2px black;
+	padding: 0.25em;
+}
+
+.cards {
+	opacity: 0;
+	display: inline-block;
+	padding: 0.5em;
+	position: relative;
+	border: black solid 1px;
+	border-radius: 5%;
+	box-shadow: 3px 2px 2px black;
+	box-sizing: border-box;
+    margin-left: -5%;
+    height: 5em;
+    width: 15%;
+}
+
+#container-middle {
+	height: 14em;
+	width: 100%;
+}
+
+.button-container {
+	width: 47%;
+	height: 100%;
+	float: right;
+	/*border-style: solid;
+	border-color: black;*/
+	box-sizing: border-box;
+}
+
+#bet{
+	width: 100%;
+	z-index: -10;
+}
+
+
+.cat {
+	float: right;
+	width: 43%;
+	margin-right: 15%;
+	margin-top: 12%;
+	box-sizing: border-box;
+	box-shadow: 3px 2px 2px black;
+	border-radius: 5%
+}
+
+.cat:hover {
+	opacity: 0.6;
+}
+
+span{
+	float: right;
+	font-size: 16px;
+}
+
+#stand {
+	width: 100%;
+}
+
+#hit{
+	width: 100%;
+}
+
+#bank-container {
+	float: left;
+	height: 100%;
+	/*border-style: solid;
+	border-color: black;*/
+	box-sizing: border-box;
+	padding-top: 1em;
+	width: 41%;
+	padding-left: 9%;
+}
+
+/*span {
+	text-align: center;
+}*/
+
+#direction {
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+/*	border: solid 1px black;*/
+	width: 90%;
+	margin-bottom: 1em;
+	margin-left: 7%;
+}
+
+.button {
+	float: right;
+}
+
+.faces {
+	color: black;
+	font-size: 1.5em;
+	position: absolute;
+	border-radius: 5%;
+	opacity: 0;
+}
+
+.cardImg {
+	position: absolute;
+	top: 53%;
+    left: 30%;
+    height: 2em;
+	/*border: solid 1px black;*/
+	border-sizing: border-box;
+}
+
+#dImg1 {
+	opacity: 1;
+	position: absolute;
+	z-index:-10;
+}
+
+.pizza {
+	width: 30%;
+}
+
+#bank {
+	margin-top: 25%;
+}
+
+#betPizza {
+	padding-left: 14%;
+    padding-top: 3%;
+    width: 30%;
+}
+
+
+
+@media (min-width: 500px) { /*<------------------------------- media query max-width 500px*/
+
+.cat {
+	width: 40%;
+	margin-top: 10%;
+}
+
+}
+
+
+
+@media (min-width: 520px) { /*<------------------------------- media query max-width 520px*/
+
+.cards {
+	margin-left: -3%;
+	height: 6em;
+}
+
+#container-top {
+	padding-top: 2em;
+	height: 7em;
+}
+
+#bank-container {
+	padding-left: 8%;
+	width: 39%;
+}
+
+.cat {
+	width: 38%;
+	margin-top: 10%;
+}
+
+.cardImg {
+	top: 40%;
+    left: 32%;
+    height: 3em;
+}
+	
+}
+
+
+
+
+@media (min-width: 570px) { /*<------------------------------- media query max-width 570px*/
+
+#container-top {
+	padding-left: 12%;
+}
+
+#container-bottom {
+	padding-left: 12%;
+}
+
+#bank-container {
+	padding-left: 12%;
+	width: 38%;
+}
+
+#container-middle {
+	height: 18em;
+}
+
+.cards {
+	margin-left: 0%;
+}
+
+.cat {
+	width: 38%;
+	margin-top: 8%;
+}
+
+#container-middle {
+	height: 13em;
+	width: 100%;
+}
+
+}
+
+
+@media (min-width: 600px) { /*<------------------------------- media query max-width 600px*/
+
+.cards {
+	height: 6.5em;
+}
+
+.cat {
+	width: 36%;
+	margin-top: 6%;
+}
+
+#direction {
+	width: 100%;
+	padding-left: 12%;
+}
+
+.cardImg {
+	top: 35%;
+    left: 28%;
+    height: 4em;
+}
+
+#container-middle {
+	height: 13em;
+}
+
+
+}
+
+@media (min-width: 650px) { /*<------------------------------- media query max-width 650px*/
+
+.cards {
+	width: 14%;
+}
+
+.cat {
+	width: 33%;
+	margin-top: 6%;
+}
+
+#direction {
+	width: 100%;
+	padding-left: 17%;
+}
+
+#bank-container {
+	width: 34%;
+	padding-top: 2em;
+}
+
+.cardImg {
+	top: 33%;
+    left: 26%;
+    height: 4.25em;
+}
+
+
+}
+
+
+
+@media (min-width: 700px) { /*<------------------------------- media query max-width 700px*/
+
+.cards {
+	width: 13%;
+}
+
+.cat {
+	width: 32%;
+	margin-top: 6%;
+}
+
+#container-top {
+	height: 6em;
+	padding-left: 10%;
+}
+
+#container-bottom {
+	padding-left: 10%;
+}
+
+#container-bottom {
+	padding-top: 18%;
+}
+
+#bank-container {
+	width: 34%;
+	padding-top: 4em;
+}
+
+#direction {
+	width: 100%;
+	padding-left: 32%;
+}
+
+#container-middle {
+	height: 7em;
+}
+
+
+}
+
+
+
+@media (min-width: 750px) { /*<------------------------------- media query max-width 750px*/
+
+.cards {
+	width: 12%;
+	margin-left: 2%;
+}
+
+#bank-container {
+	width: 32%;
+	padding-top: 4em;
+}
+
+.cat {
+	width: 30%;
+}	
+
+#container-top, #container-bottom {
+	padding-left: 13%;
+}
+
+#container-bottom {
+	padding-top: 16%;
+}
+
+#container-top {
+	height: 6em;
+}
+
+#direction {
+	padding-left: 31%;
+}
+
+#container-middle {
+	height: 7em;
+}
+
+
+
+}
+
+
+@media (min-width: 800px) { /*<------------------------------- media query max-width 800px*/
+
+#bank-container {
+	width: 30%;
+}
+
+.cat {
+	width: 28%;
+}
+
+.cards {
+	width: 11%;
+}
+
+#container-top, #container-bottom {
+	padding-left: 13%;
+}
+
+#direction {
+	font-size: 1.25em;
+	padding-left: 29%;
+}
+
+.cardImg {
+    height: 4.25em;
+}
+
+}
+
+
+@media (min-width: 875px) { /*<------------------------------- media query max-width 875px*/
+
+#bank-container {
+	width: 27%;
+}
+
+.cat {
+	width: 25%;
+	margin-top: 5%;
+}
+
+.cards {
+	width: 10%;
+}
+
+#container-top, #container-bottom {
+	padding-left: 14%;
+}
+
+#container-bottom {
+	padding-top: 4em;
+}
+
+#container-middle {
+	height: 9em;
+}
+
+#direction {
+	font-size: 1.35em;
+	padding-left: 27%;
+}
+
+
+}
+
+
+
+@media (min-width: 900px) { /*<------------------------------- media query max-width 900px*/
+
+.cards {
+	height: 7em;
+	width: 11%;
+}
+
+#bank-container {
+	width: 24%;
+	padding-top: 4em;
+}
+
+#direction {
+	width: 200%;
+}
+
+#betBox {
+	padding: 0.5em;
+	width: 94%;
+}
+
+#bankBox {
+	padding: 0.5em;
+	width: 94%;
+}
+
+.cat {
+	width: 23%;
+}	
+
+#container-bottom {
+	padding-left: 15%;
+	padding-top: 10%;
+}
+
+#container-middle {
+	height: 9em;
+}
+
+#container-top {
+	padding-left: 15%;
+	height: 6em;
+	padding-top: 1.5em;
+}
+
+.button-container {
+	margin-right: 1%;
+}
+
+#direction {
+	padding-left: 30%;
+}
+
+.cardImg {
+    height: 4.5em;
+}
+
+}
+
+
+
+
+@media (min-width: 1000px) { /*<------------------------------- media query max-width 1000px*/
+
+.cards {
+	height: 8em;
+}
+
+.cat {
+	width: 21%;
+}
+
+h1 {
+	padding-top: 0.5em;
+}
+
+#container-top {
+	height: 7em;
+}
+
+.cardImg {
+    height: 4.6em;
+}
+
+#bank-container {
+	width: 23%;
+}
+
+#direction {
+	padding-left: 30%;
+}
+
+.button-container {
+	margin-right: 2%;
+}
+
+#container-middle {
+	height: 7em;
+}
+
+#container-bottom {
+	padding-top: 11%;
+}
+
+}
+
+
+
+@media (min-width: 1080px) { /*<------------------------------- media query max-width 1080px*/
+
+#bank-container {
+	width: 22%;
+}
+
+.cat {
+	width: 18%;
+	margin-top: 5%;
+}
+
+.cards {
+	height: 8.2em;
+}
+
+#direction {
+	padding-left: 25%;
+}
+
+.button-container {
+	margin-right: 3%;
+}
+
+}
+
+
+@media (min-width: 1150px) { /*<------------------------------- media query max-width 1150px*/
+
+#bank-container {
+	width: 21%;
+}
+
+.cat {
+	width: 17%;
+	margin-top: 4%;
+}
+
+#direction {
+	padding-left: 32%;
+}
+
+#container-middle {
+	height: 7em;
+}
+
+#container-top {
+	height: 7em;
+}
+
+.button-container {
+	margin-right: 6%;
+}
+
+#container-bottom {
+	padding-top: 9%;
+}
+
+.cards {
+	width: 9%;
+	height: 8.3em;
+}
+
+.cardImg {
+    height: 5em;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
